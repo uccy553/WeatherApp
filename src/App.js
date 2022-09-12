@@ -43,12 +43,9 @@ function App() {
     }
   }
 
-  console.log(city)
 
   const handleSearch = () => {
-    if(city !== "Arizona") {
-      setCity(city);
-    }
+    setCity(city);
   }
   return (
     <div className="app" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', height: 'fit-content' }}>
@@ -57,7 +54,7 @@ function App() {
           weather && (
             <div className='container'>
             <div className='section section__inputs'>
-              <input onKeyDown={enterKeyPress} onChange={(e) => setCity(e.currentTarget.value)} type="text" name="city" placeholder='Enter City...' />
+              <input onKeyDown={enterKeyPress} onChange={(e) => setCity(e.currentTarget.value)} type="text" name="city" placeholder='Enter Location...' />
               <button className='btn' onClick={handleSearch} ><BsSearch /></button>
               <button className='btn-1' onClick={(event) => handleUnitClick(event)}>°F</button>
             </div>

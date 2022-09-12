@@ -27,7 +27,7 @@
   max-width: 800px;
   margin: auto;
   height: 100%;
-
+  gap: 2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,9 +66,10 @@
 }
 
 .section__inputs>.btn-1 {
-  padding: 10px 50px;
+  padding: 10px;
   border: none;
-  border-radius: 00.4rem;
+  width: 2.5em;
+  border-radius: 50%;
   font-size: 20px;
   font-weight: 500;
   background-color: white;
@@ -111,11 +112,19 @@
     gap: 1em;
   }
 
+  .section__inputs input {
+    width: 100%;
+  }
+
+  .overlay {
+    height: fit-content;
+  }
+
   .btn {
     padding: 10px 30px;
     border: none;
     border-radius: 10px;
-    margin-right: 15em;
+    margin-right: 12em;
   }
 
 
